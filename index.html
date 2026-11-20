@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO / link-preview text. Edit these if you change your name or title. -->
+  <title>Ahmed Rabea | AI Enthusiast, Technology &amp; Software Development</title>
+  <meta name="description" content="Portfolio of Ahmed Rabea, an Egyptian technology enthusiast interested in Artificial Intelligence, software development, Flutter and Dart, and entrepreneurship.">
+  <meta name="author" content="Ahmed Rabea">
+  <meta name="theme-color" content="#0A0F22">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmed Rabea | AI Enthusiast, Technology &amp; Software Development">
+  <meta property="og:description" content="Artificial Intelligence, software development, Flutter and Dart, and entrepreneurship.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Apply the saved theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" data-bind="brand" aria-label="Back to top"></a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul id="nav-list"></ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch color theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-name" class="hero-name" data-bind="name"></h1>
+          <p class="hero-title" data-bind="title"></p>
+          <p class="hero-intro" data-bind="intro"></p>
+          <div class="hero-actions" id="hero-actions"></div>
+        </div>
+
+        <div class="badge-stage">
+          <span class="badge-disc" aria-hidden="true"></span>
+          <figure class="badge" id="badge">
+            <span class="badge-strap" aria-hidden="true"></span>
+            <span class="badge-slot" aria-hidden="true"></span>
+            <img class="badge-photo" id="hero-photo" alt="" width="700" height="933" fetchpriority="high">
+            <figcaption class="badge-caption">
+              <span class="badge-name" data-bind="name"></span>
+              <span class="badge-role" data-bind="title"></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="wrap split">
+        <h2 id="about-h" class="section-title"></h2>
+        <div class="about-body">
+          <div id="about-text" class="prose"></div>
+          <ul id="interests" class="interests" aria-label="Interests"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h" class="section-title"></h2>
+        <ul id="skills-list" class="skills"></ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-h">
+      <div class="wrap">
+        <h2 id="projects-h" class="section-title"></h2>
+        <div id="projects-grid" class="projects"></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section section-alt" id="achievements" aria-labelledby="ach-h">
+      <div class="wrap split">
+        <h2 id="ach-h" class="section-title"></h2>
+        <ol id="achievements-list" class="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h" class="contact-title"></h2>
+        <p id="contact-text" class="contact-text"></p>
+        <ul id="contact-list" class="contact-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span id="footer-copy"></span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="padding:2rem;font-family:sans-serif">This portfolio needs JavaScript to display. Contact: rabea0279@gmail.com</p>
+  </noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
